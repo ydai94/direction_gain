@@ -1,0 +1,108 @@
+{
+  "status": "VERIFIED_POINT_METRICS",
+  "n_images": 10398,
+  "n_scores": 20796,
+  "coverage_status": {
+    "PRIMARY_VALID": 1295,
+    "NOT_WRITABLE": 19
+  },
+  "components": {
+    "clean": {
+      "bias": 3.4277992277992277,
+      "alignment": 0.8177606177606178
+    },
+    "steer": {
+      "bias": 2.3015444015444015,
+      "alignment": 0.6613899613899614
+    },
+    "random0": {
+      "bias": 3.24980694980695,
+      "alignment": 0.7525096525096525
+    }
+  },
+  "G_M": {
+    "G": {
+      "ci95": [
+        0.18524111710950697,
+        0.2936988621012283
+      ],
+      "rho": 0.2395437773702584,
+      "undefined_draws": 0
+    },
+    "G_minus_M": {
+      "ci95": [
+        0.18983939794543997,
+        0.32123644042502897
+      ]
+    },
+    "M": {
+      "ci95": [
+        -0.07233011028088797,
+        0.04105891082319463
+      ],
+      "rho": -0.015617656559042653,
+      "undefined_draws": 0
+    }
+  },
+  "frozen_prediction": {
+    "B": {
+      "MSE": 983.9206889263465
+    },
+    "B_G": {
+      "MSE": 900.0557410141539
+    },
+    "B_G_M": {
+      "MSE": 938.0061358786418
+    },
+    "B_G_vs_B": {
+      "MSE_reduction": 83.86494791219268,
+      "ci95": [
+        45.12118700641887,
+        122.19943480713992
+      ]
+    },
+    "B_M": {
+      "MSE": 1088.6649572918177
+    },
+    "full_vs_B_G": {
+      "MSE_reduction": -37.95039486448784,
+      "ci95": [
+        -53.46007996138193,
+        -23.00495664984495
+      ]
+    },
+    "full_vs_B_M": {
+      "MSE_reduction": 150.65882141317599,
+      "ci95": [
+        111.74770640480034,
+        189.81310079371445
+      ]
+    }
+  },
+  "n_coverage": 1314,
+  "n_paired": 1295,
+  "n_prediction": 1295,
+  "score_sha256": "f5ba2881ca6b69a846a5b35c62fb3d710bac508b01df06062094eff87ec6be52",
+  "summary": {
+    "arm_means": {
+      "clean": 24.625482625482626,
+      "random0": 24.1003861003861,
+      "steer": 31.49034749034749
+    },
+    "steer_vs_clean": {
+      "ci95": [
+        5.127413127413128,
+        8.633204633204633
+      ],
+      "mean": 6.864864864864865
+    },
+    "steer_vs_random": {
+      "ci95": [
+        5.683397683397684,
+        9.150772200772199
+      ],
+      "mean": 7.38996138996139
+    }
+  },
+  "verification": "Raw labels, image hashes in manifests, shard hashes, composites, G/M point correlations and frozen-predictor MSE reconstructed; CIs from unchanged frozen finalizer."
+}

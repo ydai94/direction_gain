@@ -1,0 +1,12 @@
+{
+  "seed": 20260911,
+  "models": [
+    "sd3",
+    "flux",
+    "qwen"
+  ],
+  "max_new_tokens": 8,
+  "attempts": 2,
+  "cohort_source_sha256": "ef38cb3fb3fecac72b5d0224243d7091c47a5c0573111135d58d70104aa01ca7",
+  "judge_path": "Qwen/Qwen3-VL-30B-A3B-Instruct"
+}

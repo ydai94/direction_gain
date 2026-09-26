@@ -1,0 +1,390 @@
+{
+  "dependencies": {
+    "experiments/causal_patching/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/causal_patching/encoder_runner.py": "d0dbd3efbe28fea9512677fb938263a241d8654ba798921023abb19d17263975",
+    "experiments/causal_patching/patcher.py": "7dd2acc4e10538b65c597982fc8bc8fd13b12ee630a22ba87fc07efea372c7c7",
+    "experiments/causal_patching/projection_patcher.py": "6cea7cfecdf98c6eab9eb1d505fdb4a5edbef9c1036355c422f542dd2a2791e8",
+    "experiments/causal_patching/run_three_methods.py": "1f42e1a1335c06114358616c839b0d3fc67c2ca310d1a181fd150cd09aa9ddd3",
+    "experiments/causal_patching/score_images.py": "a98fa8e2526db1fd66c8d7eb19df591b62ff29c01749537ed90b24a939e3d7dc",
+    "experiments/contrastive_denoising_guidance_pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/contrastive_denoising_guidance_pilot/cdg_loop.py": "a860de92ae5cddfee47d2591505a0da6c5faae2f17427401661e1ab401e20e14",
+    "experiments/interp_flux/flux_concept_control.py": "eb28fb80edd1fb7e60e4674552a4b9cd7edc402c9c86c761039eda15a3b3546b",
+    "experiments/interp_program/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/interp_program/config_concepts.py": "b044c3c3d32b9c86ace015fae73ce421ce847af6bffc5dbaf2531d53ea132d0c",
+    "experiments/interp_program/config_interp.py": "0e35d1e6dd10d4606b7fa377675bdffb2d287fe742d45bdb7430db89333f38ed",
+    "experiments/interp_program/dit_block_ops.py": "97324a46b20ebc59392994ecf854b06a4bc81a88ab1c3e2acf858f0ee2ab3a34",
+    "experiments/interp_program/exp243_gen.py": "306945acf80d0cd7a0bb07363b95958511ba596ef9703f1483d78151bd32bdb3",
+    "experiments/interp_program/exp29_score_vlm.py": "ad349464459e76a3e2a3bbe3da775846a5c749f7716256db5a9ba9ca62170978",
+    "experiments/interp_program/exp38_dit_depth.py": "3e4d92dab75c5c7d058f5f29c109f33bd0d7cd27afc25ca97181454a02ef45dd",
+    "experiments/layer_probing/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/layer_probing/config_local.py": "37aca81b53bc8e65216ce5ad26dbf4f2e915655b1b84461eb19d2d3d6b3e11a9"
+  },
+  "experiment": "Exp276",
+  "files": {
+    "README.md": "8654becfbb3a46985336a12966f9658cbaabf072f884992b134ed974ea386838",
+    "adapter.py": "2f902b415f5efd69ce4b4505bcac49e684e9a5f880889b05f8d90a4d7dd45bb1",
+    "base_model.py": "8afb1a6be73b4b66219f22c4165a3020f4a26f41225cc34b0bc20cee206fa9fd",
+    "cohort.json": "84560c22a402b05fbb551b72eaa5681dbbfcf3f6f490d4e30ee14e5fc4265cce",
+    "cohort300.json": "0b2159ca07faefc5df3e584845118f324866c5a52272ea8964cacbc2b9dc3fd6",
+    "common.py": "9d3a476308e3ca1d31a8107e12e0485a0ea38d391e14f14e6baadff62072ae32",
+    "config.json": "dc6fea5854c1db136c524567fa13ade9e571051b86eb401c996824fc34a3bdcd",
+    "control.py": "941ec4ad0d38695979e6727010a079f3dc9aa2484888f5ea207b79d9b980a8e7",
+    "cpu.slurm": "e75ab059924a28f31b33d0ad64ddc6bb0f99bb89908ef02896860cb298f82fd3",
+    "dependency_sources/experiments/causal_patching/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dependency_sources/experiments/causal_patching/encoder_runner.py": "d0dbd3efbe28fea9512677fb938263a241d8654ba798921023abb19d17263975",
+    "dependency_sources/experiments/causal_patching/patcher.py": "7dd2acc4e10538b65c597982fc8bc8fd13b12ee630a22ba87fc07efea372c7c7",
+    "dependency_sources/experiments/causal_patching/projection_patcher.py": "6cea7cfecdf98c6eab9eb1d505fdb4a5edbef9c1036355c422f542dd2a2791e8",
+    "dependency_sources/experiments/causal_patching/run_three_methods.py": "1f42e1a1335c06114358616c839b0d3fc67c2ca310d1a181fd150cd09aa9ddd3",
+    "dependency_sources/experiments/causal_patching/score_images.py": "a98fa8e2526db1fd66c8d7eb19df591b62ff29c01749537ed90b24a939e3d7dc",
+    "dependency_sources/experiments/contrastive_denoising_guidance_pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dependency_sources/experiments/contrastive_denoising_guidance_pilot/cdg_loop.py": "a860de92ae5cddfee47d2591505a0da6c5faae2f17427401661e1ab401e20e14",
+    "dependency_sources/experiments/interp_flux/flux_concept_control.py": "eb28fb80edd1fb7e60e4674552a4b9cd7edc402c9c86c761039eda15a3b3546b",
+    "dependency_sources/experiments/interp_program/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dependency_sources/experiments/interp_program/config_concepts.py": "b044c3c3d32b9c86ace015fae73ce421ce847af6bffc5dbaf2531d53ea132d0c",
+    "dependency_sources/experiments/interp_program/config_interp.py": "0e35d1e6dd10d4606b7fa377675bdffb2d287fe742d45bdb7430db89333f38ed",
+    "dependency_sources/experiments/interp_program/dit_block_ops.py": "97324a46b20ebc59392994ecf854b06a4bc81a88ab1c3e2acf858f0ee2ab3a34",
+    "dependency_sources/experiments/interp_program/exp243_gen.py": "306945acf80d0cd7a0bb07363b95958511ba596ef9703f1483d78151bd32bdb3",
+    "dependency_sources/experiments/interp_program/exp29_score_vlm.py": "ad349464459e76a3e2a3bbe3da775846a5c749f7716256db5a9ba9ca62170978",
+    "dependency_sources/experiments/interp_program/exp38_dit_depth.py": "3e4d92dab75c5c7d058f5f29c109f33bd0d7cd27afc25ca97181454a02ef45dd",
+    "dependency_sources/experiments/layer_probing/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dependency_sources/experiments/layer_probing/config_local.py": "37aca81b53bc8e65216ce5ad26dbf4f2e915655b1b84461eb19d2d3d6b3e11a9",
+    "engineering.py": "bc8740b841a6a081543d953a5916c839f74923ea649b5f77ef9e97e5dbaeb6a1",
+    "g_probe.py": "e0aa0ccf6b825eb0c576b2bee5ec0432a1559534564e11398d8a8bd546767b5e",
+    "gen.py": "44ae194aa5500890ca0e920b9fb8987d73371f04499ab45d7ed38bcefda5d52c",
+    "headroom.py": "9e9745bb98bf89af6df67356b20b4d6de3d5134180a61d07c60ddf7824e39162",
+    "protocol.json": "1b9a69efdc6b53b26735151710515fbc0587d99d48029e84797bee9ceb9251c0",
+    "recovery.py": "12d8fc4d64a3188a97969558a3aeca6c33e66ea880907d79acc143b75ef7d515",
+    "test_recovery.py": "4cb3017c07f9b2ef60be5feff19d3e83ba6629cbed31a02e114a86bb611b3cf5",
+    "worker.slurm": "7177995fe6140a3fb57be426a115eefa93ece9db1ff9afdc2c5d70d610efdbc7"
+  },
+  "model_assets": [
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/model_index.json",
+      "sha256": "3334bf3225f2838572315fd601868ae766c3b4ece71ef2d771d1ac68e8709dc7",
+      "size": 476
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/scheduler/scheduler_config.json",
+      "sha256": "e35f83ab0339e3085e2dadebc6702a9fd55fc918bb9603b73ce78cf94830b497",
+      "size": 480
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/config.json",
+      "sha256": "0a08c2c174bb9a15e7fc35dafc9378ed09a47a8c511e1cc8b1985d2c582c781d",
+      "size": 3231
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/generation_config.json",
+      "sha256": "bb52bfdd308deaea4ec800bf0165e75770b0a4e5c105963bee1b0398f4043d3e",
+      "size": 121
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/model-00001-of-00004.safetensors",
+      "size": 4968243304
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/model-00002-of-00004.safetensors",
+      "size": 4991495816
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/model-00003-of-00004.safetensors",
+      "size": 4932751040
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/model-00004-of-00004.safetensors",
+      "size": 1691924384
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/text_encoder/model.safetensors.index.json",
+      "sha256": "4be35310ddc165e46e88de4c3fec8c1210014b0b8717f4544d82cc740814ae0c",
+      "size": 57655
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/tokenizer/added_tokens.json",
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+      "size": 605
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/tokenizer/special_tokens_map.json",
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "size": 613
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/tokenizer/tokenizer_config.json",
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614",
+      "size": 4686
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/tokenizer/vocab.json",
+      "sha256": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d",
+      "size": 3383407
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/config.json",
+      "sha256": "2ad5051326adfd1949f1d1ffd4c465ffcc5b4ded39189495aabae97cde823f1e",
+      "size": 513
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model-00001-of-00005.safetensors",
+      "size": 9973578592
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model-00002-of-00005.safetensors",
+      "size": 9987326072
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model-00003-of-00005.safetensors",
+      "size": 9987307440
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model-00004-of-00005.safetensors",
+      "size": 9930685712
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model-00005-of-00005.safetensors",
+      "size": 982130472
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/transformer/diffusion_pytorch_model.safetensors.index.json",
+      "sha256": "034f003b74493730e1c595b2e23232e99d9e28bcef3b4c10c56d1b53eee4b435",
+      "size": 198887
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/vae/config.json",
+      "sha256": "052d79ba3f069ee9f748383076fee827392d4085ed33084df1d2387b0229a868",
+      "size": 864
+    },
+    {
+      "path": "${MODEL_ROOT}/Qwen-Image/vae/diffusion_pytorch_model.safetensors",
+      "size": 253806966
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/model_index.json",
+      "sha256": "b5e97ca0d3c0cd9a1e3ed91a71bbdd489de7941b23fe038b3aaa9acf36fd1543",
+      "size": 706
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/scheduler/scheduler_config.json",
+      "sha256": "677e1ed36ca0de4ac8cc766ca58869e8649673d5f1d47eb8f8aef511a18ae8f7",
+      "size": 141
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder/config.json",
+      "sha256": "3ae637e6409ed10c125e13b935461060d629ee069eea7cb8c3e9eee26b01ff1a",
+      "size": 574
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder/model.fp16.safetensors",
+      "size": 247323896
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder/model.safetensors",
+      "size": 247323896
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_2/config.json",
+      "sha256": "786ac791f8ae2168eca583978d89e97b704579e4873a2ca36e2d8b5af561f625",
+      "size": 570
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_2/model.fp16.safetensors",
+      "size": 1389382176
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_2/model.safetensors",
+      "size": 1389382176
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/config.json",
+      "sha256": "9035948b0904c536918a88b5d984a52cfca26a5c57efa9e90149790cf38c151e",
+      "size": 740
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model-00001-of-00002.safetensors",
+      "size": 4994582104
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model-00002-of-00002.safetensors",
+      "size": 4530066248
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model.fp16-00001-of-00002.safetensors",
+      "size": 4994582104
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model.fp16-00002-of-00002.safetensors",
+      "size": 4530066248
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model.safetensors.index.fp16.json",
+      "sha256": "2d9e582d0e2be983581dbbfcfb6ad79e4acc58e9c700d4e855b3825fb3ad6e26",
+      "size": 20980
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/text_encoder_3/model.safetensors.index.json",
+      "sha256": "3bacec0f0cf392399d4a385908f67dd73df99c9e9cfee669f148858ba9fbdb0a",
+      "size": 19885
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer/special_tokens_map.json",
+      "sha256": "2cdb3b8331a60c92fc1e55a13e9fd61fd2293c5a51275fdcccd62b780052530e",
+      "size": 588
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer/tokenizer_config.json",
+      "sha256": "6bdcee9ccce2a16ca2b4c0c5ed00b42c50ea225f4472a8c4c1e963a2902c2881",
+      "size": 705
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer/vocab.json",
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "size": 1059962
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_2/special_tokens_map.json",
+      "sha256": "c4dbb96da703fb38f10ccf0490df2fd476811c5a3e71b7e0189cffeed3224e25",
+      "size": 576
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_2/tokenizer_config.json",
+      "sha256": "e70eb3e2b85a508e32bb81c32c13fc3f2b015548ca469b94627c2f32e445cba1",
+      "size": 856
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_2/vocab.json",
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "size": 1059962
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_3/special_tokens_map.json",
+      "sha256": "7a1985a994c41886db38c719d2a3d2f40606663cc19d7c5d6a85d349320e06d2",
+      "size": 2543
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_3/tokenizer.json",
+      "sha256": "652ffdfc379606bad8edfb653f92dcf28e2e5dbf1cdfe50d685d29b2cad12dd6",
+      "size": 2424035
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/tokenizer_3/tokenizer_config.json",
+      "sha256": "83b3e7737eef754efca607d9f580798cc35457daa96052cc60179f095a375c14",
+      "size": 20617
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/transformer/config.json",
+      "sha256": "b6ea8128277df286573ce1937c36ce42a5a84e976331091ffccb1d05893dc299",
+      "size": 524
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/transformer/diffusion_pytorch_model.safetensors",
+      "size": 4939433672
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/vae/config.json",
+      "sha256": "58557f2439dfa867450caef425b5d11160be8aa9c34d60dbf23a94a6a94cb060",
+      "size": 809
+    },
+    {
+      "path": "${MODEL_ROOT}/stable-diffusion-3.5-medium/vae/diffusion_pytorch_model.safetensors",
+      "size": 167666902
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/model_index.json",
+      "sha256": "51a76cb1cf3ed37423a1128c79c22faee8e6fbe7f5aaeb737f0a258930dbaac0",
+      "size": 446
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/scheduler/scheduler_config.json",
+      "sha256": "067afb012cef64553a763447d1efd93daeffcc0123ca7e25b09f8de20b90762e",
+      "size": 486
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/config.json",
+      "sha256": "57866e90a1d6328a7ed53eca732bce106f86c76ab99d7629e01f0a319fa57998",
+      "size": 1538
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/generation_config.json",
+      "sha256": "4347b1aeed2b2b78bc059920a0b7f5fec71482e1344952b76d7665d638d71f13",
+      "size": 214
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/model-00001-of-00004.safetensors",
+      "size": 4902257696
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/model-00002-of-00004.safetensors",
+      "size": 4915960368
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/model-00003-of-00004.safetensors",
+      "size": 4983068496
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/model-00004-of-00004.safetensors",
+      "size": 1580230264
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/text_encoder/model.safetensors.index.json",
+      "sha256": "e7e4bdc58d3302c97357f27979b270987dd620cf0cd9b1c130e3a51c9d64df95",
+      "size": 32914
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/tokenizer/added_tokens.json",
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "size": 707
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/tokenizer/special_tokens_map.json",
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "size": 613
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/tokenizer/tokenizer.json",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "size": 11422654
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/tokenizer/tokenizer_config.json",
+      "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+      "size": 5404
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/tokenizer/vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "size": 2776833
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/transformer/config.json",
+      "sha256": "e82d0d325aff03c3b3b33a1634c47a5f88867478f53071b9c9a39c99010c5d46",
+      "size": 542
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
+      "size": 9801069272
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "size": 8356121608
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/transformer/diffusion_pytorch_model.safetensors.index.json",
+      "sha256": "96fe598b12bdfa266f54c2a6027dedc6e87016cce7e19cb2821a8b7deaf9deb9",
+      "size": 24875
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/vae/config.json",
+      "sha256": "0d6dfb69ae95a5e2ac9836284bbb63d8b38ce67b25ba2dff380752b2a10ab948",
+      "size": 821
+    },
+    {
+      "path": "${MODEL_ROOT}/models--black-forest-labs--FLUX.2-klein-9B/snapshots/92196c8e11f7b6cf2b7493e037d8c5345c559216/vae/diffusion_pytorch_model.safetensors",
+      "size": 168120878
+    }
+  ],
+  "runtime_root": "results/seed_ceiling/recovery_v2",
+  "source_protocol_sha256": "1b9a69efdc6b53b26735151710515fbc0587d99d48029e84797bee9ceb9251c0",
+  "source_release": "${DG_ROOT}/pipelines/heldout_prediction",
+  "version": "recovery_v2",
+  "weight_hash_scope": "presence and byte sizes; weight bytes not rehashed"
+}

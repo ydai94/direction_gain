@@ -1,0 +1,23 @@
+{
+  "results/interp_program/exp274_frozen_selection/results.json": {
+    "sha256": "3583c83ecb70842698d3a97126c01968b04df266c0db73b87f5b729738c3ff08"
+  },
+  "results/interp_program/exp271_heldout/SD3_VERIFIED_20260913.json": {
+    "sha256": "e1b8f0dd9d3be2532a50a161190f32e43bad2d3554a7d49caaef97bd3ba7a82b"
+  },
+  "results/interp_program/exp273_selection/results.json": {
+    "sha256": "10715d5d244e7023c658528378470bda5867f624220fa45b3e7d04ec5bcf98ff"
+  },
+  "results/interp_program/exp271_heldout/FLUX_VERIFIED_20260914.json": {
+    "sha256": "11177a4ce6855a1e8d7e773abb249e197d3ba9ae617ea9924099f49215364478"
+  },
+  "results/interp_program/exp273_flux_selection/results.json": {
+    "sha256": "827c70c276ceb07725a858eb49194b836e1148f770311c86d1d6fa64d7c83219"
+  },
+  "results/interp_program/exp271_heldout/QWEN_VERIFIED_20260916.json": {
+    "sha256": "190a94c8810f35ba2728db7a1b2e185145d8a64248bbda50f063d0ed4dbbf3e2"
+  },
+  "results/interp_program/exp273_qwen_selection/results.json": {
+    "sha256": "733fd2b327e36eea40787ed3516caa78b49cac003746b151198f93044dc9f1de"
+  }
+}

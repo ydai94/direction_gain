@@ -1,0 +1,23 @@
+{
+ "model": "qwen",
+ "n_test": 1314,
+ "n_dev": 498,
+ "null": {
+  "mu": 0.011151917576095226,
+  "sd": 0.11051755021215953,
+  "sha256": "d1dbcb9b4d05c9c5bd7e0e79f5909333b737f0be54f3a9097049bb2c76dffdc6"
+ },
+ "cal_keys": [
+  "C",
+  "G",
+  "M",
+  "T_rel",
+  "input_direction_norm",
+  "pair_separability",
+  "reason",
+  "status",
+  "triplet_key"
+ ],
+ "sha_scores": "f5ba2881ca6b69a8",
+ "sha_analysis": "bd2b53f38c6914c8"
+}

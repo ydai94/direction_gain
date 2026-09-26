@@ -1,0 +1,63 @@
+{
+  "run_id": "fixed_output_main_20260908",
+  "models": [
+    "sd3",
+    "flux",
+    "qwen"
+  ],
+  "probe_seeds": [
+    6,
+    7,
+    8
+  ],
+  "image_seeds": [
+    3,
+    4
+  ],
+  "headroom_seeds": [
+    0,
+    1
+  ],
+  "canary_n": 4,
+  "pilot_n": 32,
+  "bootstrap_seed": 20260908,
+  "n_resample": 10000,
+  "primary_partition": "gpu",
+  "comparison_partition": "gpu-alt",
+  "settings": {
+    "sd3": {
+      "guidance_mode": "linear_cfg",
+      "guidance_scale": 4.0,
+      "steps": 28,
+      "indices": [
+        6,
+        10
+      ],
+      "dose": 2.0,
+      "dtype": "float16"
+    },
+    "flux": {
+      "guidance_mode": "guidance_distilled_native",
+      "guidance_scale": null,
+      "steps": 8,
+      "indices": [
+        2,
+        3
+      ],
+      "dose": 1.0,
+      "dtype": "bfloat16"
+    },
+    "qwen": {
+      "guidance_mode": "normalized_cfg",
+      "guidance_scale": 4.0,
+      "steps": 50,
+      "indices": [
+        10,
+        16
+      ],
+      "dose": 2.0,
+      "dtype": "bfloat16"
+    }
+  },
+  "formal_ready": false
+}

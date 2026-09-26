@@ -1,0 +1,4 @@
+model,sampler_steps,G_full_forwards,G_1seed1step_forwards,one_seed_baseline_forwards,one_seed_decodes,one_seed_judge_calls,G_decodes,G_judge_calls,ratio_Gfull_over_baseline,ratio_Gcheap_over_baseline
+sd3,28,108,32,56,2,4,0,0,1.93,0.57
+flux,8,48,12,16,2,4,0,0,3.0,0.75
+qwen,50,126,38,200,2,4,0,0,0.63,0.19

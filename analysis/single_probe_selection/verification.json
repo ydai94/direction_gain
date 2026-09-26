@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "numeric_and_selection_checks": 324,
+  "method": "Independent Python stdlib reconstruction of every selected set, point mean, configuration range and contrast",
+  "interval_check": "Analyzer reproduces original six-probe bootstrap intervals; new intervals use the same paired estimator and recorded seed"
+}

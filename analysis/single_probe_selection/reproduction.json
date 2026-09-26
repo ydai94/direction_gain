@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "models": [
+    "sd3",
+    "flux",
+    "qwen"
+  ],
+  "draws_per_model": 10000,
+  "seed": 20260913,
+  "comparison": "Exact equality of all saved model results"
+}

@@ -1,0 +1,159 @@
+{
+  "source_host": "cluster",
+  "source_directory": "${DG_ROOT}/results/interp_program/exp271_heldout/runtime/qwen",
+  "processing": "Original 1024 x 1024 PNG bytes copied unchanged; same six cases and seed 3; no upscaling, retouching or regeneration.",
+  "previous_thumbnail_provenance": {
+    "source": "figures/qualitative.pdf before the 2026-09-23 layout revision",
+    "source_sha256": "ff79c85a2d7e9ef8be57c73569cab4801db583ee35d18141964de3ae7adc81bc",
+    "extraction": "pdfimages -png; original 80 x 80 RGB pixels; no new crop or retouching",
+    "order": "top row: clean, steered for each of three examples; then bottom row in the same order",
+    "images": {
+      "image-000.png": "fda4f56f9183de6d44c95de0be2ed1631e2b0eefa15d8afffa79f04b8692f765",
+      "image-001.png": "633cc8cdd7e6734f1ce2fcc3252b4697b9c90dc36ea92771602997f44465d79d",
+      "image-002.png": "db41561c1415e1ae75789d3745c651402c55c1ea918faa13377a9a31fc11f3ef",
+      "image-003.png": "c6be7445897eff71361ef4f870c33a36535e0864b5b4e40d879c3efec74a3fbd",
+      "image-004.png": "0308d21843f6a66edd78c3d772d96e46b1c4e9d0c980bf245d2583da57b16dd6",
+      "image-005.png": "f51a059db54b051681f0a31dda5c39da9474c4947415fb7b779a224c4d3c247d",
+      "image-006.png": "3e98eea28da0ba2f1139d8a566c399a5fb10dc945979767e78052aed820b3816",
+      "image-007.png": "6fb336ba6236f385bcfa3330a2fa73c9960311040e3ce961c2e3d996cb00c787",
+      "image-008.png": "a93ea7c4b508b8f289785f0dec639af3348cc6f38a19af2d4b20b4de66249aea",
+      "image-009.png": "de08803c3a81255588547ac56864bfef806d4f0f8917f00d7cad15d5f7312986",
+      "image-010.png": "d530d3c9aa500b854c07dbdb67905230ac0de7d10d89cd0b5808720a72b3fd1b",
+      "image-011.png": "5258ead01d60b6377abe7f8702d93a55010137326d52f38da3e688a3de641e34"
+    }
+  },
+  "images": [
+    {
+      "asset": "image-000.png",
+      "source_filename": "dbb39b4fd582114948aed073fd965cb27e3dd2ed048e9f20ee1e4db77d756a5c_clean_3.png",
+      "match_mse": 75.05791666666667,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "6e00e34c29f70786d4a695047c1d7a4edbf565555285c6459bec6f11114ecf4c"
+    },
+    {
+      "asset": "image-001.png",
+      "source_filename": "dbb39b4fd582114948aed073fd965cb27e3dd2ed048e9f20ee1e4db77d756a5c_steer_3.png",
+      "match_mse": 11.76421875,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "a19dbf3fef5c687fe04b9d571c4971a5d9105b1ba12e43d75dc98efeade6c937"
+    },
+    {
+      "asset": "image-002.png",
+      "source_filename": "795eec23f09ebc6a4fbffc47d07734ff42662d64b9a43845f71e9d92696adf4d_clean_3.png",
+      "match_mse": 23.150260416666665,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "01b8ed5799a6a7e3030bd7c0264b08e07a8c0b237cf6a143873598985117f7c7"
+    },
+    {
+      "asset": "image-003.png",
+      "source_filename": "795eec23f09ebc6a4fbffc47d07734ff42662d64b9a43845f71e9d92696adf4d_steer_3.png",
+      "match_mse": 27.974947916666668,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "f7e1a17dc269b3adad042f3fc3401de96bfb11160f3fef97911ec81667ef88c4"
+    },
+    {
+      "asset": "image-004.png",
+      "source_filename": "fbf8ac01446271d6928b1f5b2b884c760e99884886e0080fc99017c6fd714fea_clean_3.png",
+      "match_mse": 18.56078125,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "ddb7b52125f913340e3af22d46f3cefd2d84579dd9dd6d73144b14e9d7bbfdd8"
+    },
+    {
+      "asset": "image-005.png",
+      "source_filename": "fbf8ac01446271d6928b1f5b2b884c760e99884886e0080fc99017c6fd714fea_steer_3.png",
+      "match_mse": 128.42385416666667,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "4a8dc1ccd960c3b2536421171a356960017aacbddd72bd42cfe388ab8d1e4df3"
+    },
+    {
+      "asset": "image-006.png",
+      "source_filename": "bb40eaf7a1d8805d2cc070bc37223d03236ba2fcbe8403bdd8563a934396714b_clean_3.png",
+      "match_mse": 126.29875,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "6337f05f46ce64b437971a8756c9d6653f1c32b66a76322a4458ce6b9ae7173c"
+    },
+    {
+      "asset": "image-007.png",
+      "source_filename": "bb40eaf7a1d8805d2cc070bc37223d03236ba2fcbe8403bdd8563a934396714b_steer_3.png",
+      "match_mse": 17.227395833333333,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "31b3ee5df203e8f6bef078250b1a0668efc0b723b29cd58d728fcd050bf21e26"
+    },
+    {
+      "asset": "image-008.png",
+      "source_filename": "938726f0cec3b9991128937d3d6224d7884ce28668084ab34c1ba6108d6960d6_clean_3.png",
+      "match_mse": 51.9465625,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "002f7df4915c99c3a2cb4f5407cb490eceafa72c0b6430c08918f6f79e6965f3"
+    },
+    {
+      "asset": "image-009.png",
+      "source_filename": "938726f0cec3b9991128937d3d6224d7884ce28668084ab34c1ba6108d6960d6_steer_3.png",
+      "match_mse": 51.99796875,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "43dba4dcb15b7779f120f9c1f75fad84dcd79cac30febebbd7aa78aa71ae2971"
+    },
+    {
+      "asset": "image-010.png",
+      "source_filename": "06bee8f9443e21256c7f13eade6672202256eaf476084e256fa08b4ca6a38c80_clean_3.png",
+      "match_mse": 7.473125,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "a65b5c7938b8ab6febdca6507abc9b8ca61ef1afad4013200c911a46e241082d"
+    },
+    {
+      "asset": "image-011.png",
+      "source_filename": "06bee8f9443e21256c7f13eade6672202256eaf476084e256fa08b4ca6a38c80_steer_3.png",
+      "match_mse": 96.39848958333333,
+      "matching_downsample": "BILINEAR",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "ef6b7f6108552e0b3f122f71427c90c25728bde303a6563b0a00aa987de3310f"
+    }
+  ]
+}

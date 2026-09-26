@@ -1,0 +1,34 @@
+{
+  "experiment": "Exp267",
+  "seed": 20260908,
+  "models": [
+    "sd3",
+    "flux",
+    "qwen"
+  ],
+  "operator": "exp243_anchor_additive_positive_pair",
+  "calibration": "development_only_mean_cosine_null_z_v1",
+  "probe_seeds": [
+    6,
+    7,
+    8
+  ],
+  "image_seeds": [
+    3,
+    4
+  ],
+  "headroom_seeds": [
+    0,
+    1
+  ],
+  "null_directions": 4,
+  "semantic_reference_controls": 4,
+  "random_reference_controls": 4,
+  "random_behavior_direction": 0,
+  "gate": 2.0,
+  "responder_threshold": 0.25,
+  "n_resample": 10000,
+  "new_axes_planned": 20,
+  "prompts_per_new_axis": 12,
+  "benchmark_sha256": "fdf9d9445df9a8ecf9ef1950040c8848608dcf2eb65f54b9141aa9d2f20dc5d7"
+}

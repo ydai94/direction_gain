@@ -1,0 +1,19 @@
+{
+  "experiment": "Exp265A",
+  "source": "results/exp264a_qwen_anchor_top1/cases_frozen.parquet",
+  "source_sha256": "6e475988dbda54b1644e061147ad667e02987aef440f13ba3add07c7d4da9423",
+  "output": "results/exp265a_output_dose_preservation",
+  "n_cases": 24,
+  "n_calibration": 12,
+  "cohort_salt": "exp265a-cohort-v1",
+  "split_salt": "exp265a-split-v1",
+  "image_seeds": [3, 4, 5],
+  "probe_seeds": [6, 7, 8],
+  "timesteps": [10, 16],
+  "doses": [0.015625, 0.125, 0.5, 1.0, 2.0],
+  "norm_tolerance": 0.05,
+  "steps": 50,
+  "cfg": 4.0,
+  "bootstrap_seed": 265202609,
+  "bootstrap_draws": 10000
+}

@@ -1,0 +1,23 @@
+{
+ "model": "sd3",
+ "n_test": 1314,
+ "n_dev": 498,
+ "null": {
+  "mu": 0.015107887600331292,
+  "sd": 0.1450354660795619,
+  "sha256": "6a39d883a8ccb46cc95f49e7a12bf889dbe2c4dfff193fb7911b8f2dbf653cf5"
+ },
+ "cal_keys": [
+  "C",
+  "G",
+  "M",
+  "T_rel",
+  "input_direction_norm",
+  "pair_separability",
+  "reason",
+  "status",
+  "triplet_key"
+ ],
+ "sha_scores": "b4a720917d0dbbc6",
+ "sha_analysis": "bd2b53f38c6914c8"
+}

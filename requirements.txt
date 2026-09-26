@@ -1,0 +1,17 @@
+# CPU analyses (analysis/, figures/, pipelines/text_baselines_and_cost, seed_ceiling/analyze_reliability.py)
+numpy>=1.26
+scipy>=1.14
+pandas>=2.2
+scikit-learn>=1.5
+matplotlib>=3.9
+# GPU pipelines (versions used for the paper)
+torch==2.10.0
+torchvision==0.25.0
+diffusers==0.37.1
+transformers==5.5.4
+accelerate==1.13.0
+safetensors==0.7.0
+huggingface-hub==1.11.0
+pillow>=10.2
+h5py
+pyarrow

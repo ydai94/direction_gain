@@ -1,0 +1,155 @@
+{
+  "models": {
+    "sd3": {
+      "GPT-5.6": {
+        "clean": {
+          "bias": 2.5007722007722006,
+          "matching_percent": 70.27027027027027,
+          "combined": 32.13127413127413,
+          "n_images": 2590
+        },
+        "random0": {
+          "bias": 2.455984555984556,
+          "matching_percent": 68.8030888030888,
+          "combined": 31.28957528957529,
+          "n_images": 2590
+        },
+        "steer": {
+          "bias": 2.034749034749035,
+          "matching_percent": 68.14671814671814,
+          "combined": 37.07335907335907,
+          "n_images": 2590
+        }
+      },
+      "Qwen3-VL": {
+        "clean": {
+          "bias": 2.9536679536679538,
+          "matching_percent": 67.76061776061776,
+          "combined": 24.7027027027027
+        },
+        "random0": {
+          "bias": 2.9065637065637064,
+          "matching_percent": 66.02316602316603,
+          "combined": 24.494208494208493
+        },
+        "steer": {
+          "bias": 2.434749034749035,
+          "matching_percent": 65.0965250965251,
+          "combined": 30.355212355212355
+        }
+      },
+      "audit": {
+        "n_cases": 1295,
+        "outcome_ratings": 15540,
+        "identical_duplicates": 0,
+        "excluded": {
+          "non_outcome_seed": 195
+        }
+      },
+      "gpt_steer_minus_clean": 4.942084942084939
+    },
+    "flux": {
+      "GPT-5.6": {
+        "clean": {
+          "bias": 2.802316602316602,
+          "matching_percent": 79.8069498069498,
+          "combined": 33.28185328185328,
+          "n_images": 2590
+        },
+        "random0": {
+          "bias": 2.7857142857142856,
+          "matching_percent": 79.26640926640927,
+          "combined": 33.2972972972973,
+          "n_images": 2590
+        },
+        "steer": {
+          "bias": 2.1065637065637066,
+          "matching_percent": 73.78378378378379,
+          "combined": 39.575289575289574,
+          "n_images": 2590
+        }
+      },
+      "Qwen3-VL": {
+        "clean": {
+          "bias": 3.0922779922779924,
+          "matching_percent": 79.96138996138995,
+          "combined": 28.362934362934364
+        },
+        "random0": {
+          "bias": 3.0586872586872587,
+          "matching_percent": 78.4942084942085,
+          "combined": 28.617760617760617
+        },
+        "steer": {
+          "bias": 2.400772200772201,
+          "matching_percent": 73.05019305019304,
+          "combined": 34.75675675675676
+        }
+      },
+      "audit": {
+        "n_cases": 1295,
+        "outcome_ratings": 15540,
+        "identical_duplicates": 0,
+        "excluded": {
+          "non_outcome_seed": 180
+        }
+      },
+      "gpt_steer_minus_clean": 6.293436293436294
+    },
+    "qwen": {
+      "GPT-5.6": {
+        "clean": {
+          "bias": 3.0397683397683397,
+          "matching_percent": 81.62162162162163,
+          "combined": 30.841698841698843,
+          "n_images": 2590
+        },
+        "random0": {
+          "bias": 2.8355212355212354,
+          "matching_percent": 74.2084942084942,
+          "combined": 29.667953667953668,
+          "n_images": 2590
+        },
+        "steer": {
+          "bias": 1.9691119691119692,
+          "matching_percent": 65.4054054054054,
+          "combined": 35.59073359073359,
+          "n_images": 2590
+        }
+      },
+      "Qwen3-VL": {
+        "clean": {
+          "bias": 3.4277992277992277,
+          "matching_percent": 81.77606177606178,
+          "combined": 24.625482625482626
+        },
+        "random0": {
+          "bias": 3.24980694980695,
+          "matching_percent": 75.25096525096525,
+          "combined": 24.1003861003861
+        },
+        "steer": {
+          "bias": 2.3015444015444015,
+          "matching_percent": 66.13899613899615,
+          "combined": 31.49034749034749
+        }
+      },
+      "audit": {
+        "n_cases": 1295,
+        "outcome_ratings": 15540,
+        "identical_duplicates": 0,
+        "excluded": {
+          "non_outcome_seed": 252
+        }
+      },
+      "gpt_steer_minus_clean": 4.749034749034749
+    }
+  },
+  "sources": {
+    "cohort_keys.json": "894a9549ca52fb3fb943fa4c766eb29024707164903cfc28ecff9154ecf094dd",
+    "qwen_summary.json": "ced6bd74124dc73aec3b6d043a6da877e8b86160f9dbc7b1067fbba0d6dfceab",
+    "scores_flux.jsonl": "c5daceb620aebfc2fb4a31f9d57681a92f0d98245fd5297ac153816bfd9aa2ea",
+    "scores_qwen.jsonl": "917cc65e2ef1b9e03495cfe329bed090c0f5cc4e467d4fd45525772ad089c9b4",
+    "scores_sd3.jsonl": "dbf1e8760cd18e3aeaedbdb7f25830c8ec084cafc085f2a2a0f96c5b6e73e968"
+  }
+}

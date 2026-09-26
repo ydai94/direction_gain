@@ -1,0 +1,23 @@
+{
+ "model": "flux",
+ "n_test": 1314,
+ "n_dev": 498,
+ "null": {
+  "mu": 0.0038087710474841887,
+  "sd": 0.05698322478330088,
+  "sha256": "432d17018c6898d458b4a97c21a562ebf12973608df601dbcfa4dd1924aaf539"
+ },
+ "cal_keys": [
+  "C",
+  "G",
+  "M",
+  "T_rel",
+  "input_direction_norm",
+  "pair_separability",
+  "reason",
+  "status",
+  "triplet_key"
+ ],
+ "sha_scores": "006f5456a7d55f12",
+ "sha_analysis": "bd2b53f38c6914c8"
+}

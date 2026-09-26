@@ -1,0 +1,29 @@
+{
+  "experiment": "Exp280",
+  "scope": "B1 probe-design variants and B4 steering-strength sweep on the frozen Exp276 300-case subset",
+  "cohort": "seed_ceiling/cohort300.json (300 of the 1,295 three-model matched test cases, rng 20260919)",
+  "probe_seeds": [6, 7, 8],
+  "outcome_seeds": [3, 4],
+  "registered": "2026-09-20, before any Exp280 forward pass",
+  "sd3": {
+    "timesteps": [2, 6, 10, 14, 18, 22],
+    "deployed_timesteps": [6, 10],
+    "doses": [0.5, 1.0, 2.0, 4.0],
+    "deployed_dose": 2.0,
+    "gen_doses": [0.5, 1.0, 4.0]
+  },
+  "flux": {
+    "timesteps": [0, 1, 2, 3, 5, 7],
+    "deployed_timesteps": [2, 3],
+    "doses": [0.5, 1.0, 2.0, 4.0],
+    "deployed_dose": 1.0,
+    "gen_doses": [0.5, 2.0, 4.0]
+  },
+  "qwen": {
+    "timesteps": [10, 16],
+    "deployed_timesteps": [10, 16],
+    "doses": [2.0],
+    "deployed_dose": 2.0,
+    "gen_doses": []
+  }
+}
